@@ -1,0 +1,9 @@
+.button{
+    background-color: var(--blueColor);
+    color: #FBF9FF;
+    border-radius: 30px;
+    height: fit-content;
+    width: fit-content;
+    padding: 5px 40px;
+    /*box-shadow: 1px 1px 1px 1px #000807;*/
+}
