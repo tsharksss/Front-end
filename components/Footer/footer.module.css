@@ -1,0 +1,40 @@
+.main{
+    background: var(--blackColor);
+    height: 1055px;
+    color: var(--WhiteColor);
+}
+
+.footer_container{
+    padding: 0 130px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+}
+.title{
+    margin: 58px 0;
+    text-align: center;
+}
+.child_link{
+    margin: 0 5px;
+}
+.links{
+    justify-content: center;
+    margin-bottom: 20%;
+}
+.logo{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.links_logo{
+    display: flex;
+    justify-content: center;
+}
+.footer_copi{
+    background: var(--blackColor);
+    color: gray;
+    padding-bottom: 30px;
+    text-align: center;
+}

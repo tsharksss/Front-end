@@ -1,0 +1,25 @@
+.title{
+    font-size: 100px;
+    font-family: 'Sen' ;
+    color: var(--blueColor);
+    padding: 10px 0;
+    /*height: 110px;*/
+}
+
+.header{
+    font-size: 32px;
+    font-family: 'Sen-Bold', sans-serif ;
+    color: var(--greenColor);
+    padding: 10px 0;
+    /*height: 110px;*/
+
+}
+.text{
+    width: 450px;
+    font-size: 24px;
+    font-family: 'Sen', sans-serif ;
+    color: var(--blackColor);
+    padding: 10px 0;
+    height: 110px;
+
+}

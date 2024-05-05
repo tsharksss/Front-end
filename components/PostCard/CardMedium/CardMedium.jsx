@@ -1,7 +1,10 @@
 import React from 'react'
 
 import styles from './CardMedium.module.css'
-function CardMedium (props) {
+import Image from "next/image";
+
+
+function CardMedium ({title, description, image}) {
   return (
     <div>
       <div className={styles.main}>

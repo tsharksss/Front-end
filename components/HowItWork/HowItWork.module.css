@@ -1,0 +1,15 @@
+.title{
+    color: var(--greenColor);
+    font-family: 'Open-Sans';
+    font-weight: bold;
+    font-size: 48px;
+    padding-bottom: 70px;
+}
+.flex{
+    display: flex;
+    gap:5%;
+}
+
+.main{
+    padding: 0 130px;
+}

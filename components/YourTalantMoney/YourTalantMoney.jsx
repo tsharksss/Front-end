@@ -4,56 +4,66 @@ import styles from './YourTalantMoney.module.css'
 import Image from 'next/image'
 import BlueButton from '../buttons/BlueButton/BlueButton'
 import SecondBlueButton from '../buttons/SecondBlueButton/SecondBlueButton'
+
+import demo from '../../public/yourTalantImage/demo.png'
+import video from '../../public/yourTalantImage/video.png'
+import vote from '../../public/yourTalantImage/vote.png'
+import stat from '../../public/yourTalantImage/stat.png'
+import yourTalant from '../../public/yourTalantImage/yourTalant.png'
+
+
+
 function YourTalantMoney (props) {
 
-
   return (
-    <div>
-      <div className={styles.main_title}></div>
+    <div className={styles.main}>
+      <div className={styles.main_title}>
+        <h1>Твой талант стоит денег!</h1>
+      </div>
       <div className={styles.flex}>
         <div className={styles.first_column}>
-          <h1>Лучший способ заработка и общения с аудиторией для авторов контента.</h1>
+          <h1 className={styles.text_mini}>Лучший способ заработка и общения с <br/> аудиторией для авторов контента.</h1>
 
           <div className={styles.grid}>
             <div className={styles.col}>
               <div className={styles.row}>
-                <Image/>
-                <p>Some text</p>
+                <Image src={video} alt={'video'} height={48} />
+                <p>Выкладывай видео</p>
               </div>
 
               <div className={styles.row}>
-                <Image/>
-                <p>Some text</p>
+                <Image src={demo} alt={'video'} height={48} />
+                <p>Делись наработками</p>
               </div>
 
               <div className={styles.row}>
-                <Image/>
-                <p>Some text</p>
+                <Image src={stat} alt={'video'} height={48} />
+                <p>Стань на ступень выше!</p>
               </div>
             </div>
 
             <div className={styles.col}>
               <div className={styles.row}>
-                <Image/>
+                <Image src={vote} alt={'video'} height={48} />
+                <p>Обозреваай новости</p>
+              </div>
+
+              <div className={styles.row}>
+                <Image src={stat} alt={'video'} height={48} />
                 <p>Some text</p>
               </div>
 
               <div className={styles.row}>
-                <Image/>
-                <p>Some text</p>
-              </div>
-
-              <div className={styles.row}>
-                <Image/>
+                <Image src={video} alt={'video'} height={48} />
                 <p>Some text</p>
               </div>
             </div>
 
           </div>
-          <SecondBlueButton text={'Стать Автором'}/>
+          <SecondBlueButton text={'Стать Автором'} style={{width: 640, fontSize: 32, height: 65, textAlign: 'center', marginTop: 100}} />
         </div>
         <div className={styles.second_column}>
-          <Image src={""} alt={"image"}/>
+          <Image src={yourTalant} alt={"image"} width={960} />
         </div>
       </div>
     </div>

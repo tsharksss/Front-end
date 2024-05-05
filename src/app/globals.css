@@ -15,7 +15,7 @@ body{
   --greenColor: #32A095;
   --WhiteColor: #FBF9FF;
 
-  background-color: black ;
+  /*background-color: black ;*/
 }
 
 
@@ -166,6 +166,9 @@ address {
   font-style: normal;
 }
 
+
+
+
 /* Form */
 
 input, textarea, button, select {
@@ -203,4 +206,48 @@ label {
 
 legend {
   display: block;
+}
+
+
+@font-face {
+  font-family: 'Sen-Bold';
+  src:  url('../../fonts/Sen-Bold.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sen';
+  src:  url('../../fonts/Sen-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NutinoSans';
+  src:  url('../../fonts/NunitoSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NutinoSans-Bold';
+  src:  url('../../fonts/NunitoSans-Bold.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Open-Sans';
+  src:  url('../../fonts/OpenSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NutinoSans-Bold';
+  src:  url('../../fonts/OpenSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
 }

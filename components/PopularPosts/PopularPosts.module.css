@@ -1,0 +1,26 @@
+.main{
+    /*padding: 0 130px;*/
+}
+
+.title{
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-size: 48px;
+    padding: 0 130px;
+
+}
+
+.background{
+    background-color: var(--blackColor);
+    color: var(--WhiteColor);
+}
+.flex{
+    display: flex;
+    justify-content: center;
+}
+
+.grid{
+    justify-content: center;
+    display: flex;
+    gap: 60px
+}

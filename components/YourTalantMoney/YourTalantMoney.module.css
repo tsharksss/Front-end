@@ -1,0 +1,46 @@
+.main_title{
+    color: var(--blueColor);
+    font-size: 64px;
+    font-weight: bold;
+
+
+}
+
+.text_mini{
+    color: var(--blackColor);
+    font-size: 28px;
+    font-weight: bold;
+    width: 650px;
+
+    margin: 50px 0;
+}
+.main{
+    padding: 70px 130px;
+    height: 850px;
+}
+
+.grid{
+    display: flex;
+    gap: 30px;
+}
+
+.row{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin: 30px 0;
+    font-size: 24px;
+}
+.row p {
+    height: fit-content;
+}
+.col{
+    width: fit-content;
+}
+
+.second_column{
+    position: absolute;
+    top: 240px;
+    z-index: -1;
+    right: 0;
+}
