@@ -8,19 +8,19 @@ import TransprentWhiteButton from '../buttons/TransprentWhiteButton/TransprentWh
 function PopularPosts (props) {
   return (
       <div className={styles.background}>
-    <div className={styles.main}>
-      <h1 className={styles.title}> Популярное </h1>
-      <div className={styles.popular_cards}>
-        <div className={styles.grid}>
-          <CardMedium/>
-          <CardMedium/>
-          <CardMedium/>
+        <div className={styles.main}>
+          <h1 className={styles.title}> Популярное </h1>
+          <div className={styles.popular_cards}>
+            <div className={styles.grid}>
+              <CardMedium/>
+              <CardMedium/>
+              <CardMedium/>
+            </div>
+          </div>
+          <div className={styles.flex}>
+          <TransprentWhiteButton text={'Показать еще...'}/>
+          </div>
         </div>
-      </div>
-      <div className={styles.flex}>
-      <TransprentWhiteButton text={'Показать еще...'}/>
-      </div>
-    </div>
       </div>
   )
 }

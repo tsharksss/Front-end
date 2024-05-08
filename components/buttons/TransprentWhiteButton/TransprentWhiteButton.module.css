@@ -1,4 +1,8 @@
 .button{
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+
     background-color: transparent;
     color: #FBF9FF;
     border: 1px solid #FBF9FF;

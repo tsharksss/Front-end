@@ -2,6 +2,65 @@
     width: 550px;
     height: 500px;
     border-radius: 30px;
-    background-color: white;
+    /*background-color: white;*/
+    overflow: hidden;
+}
 
+.image{
+    /*position: relative;*/
+    /*z-index: -1;*/
+    /*height: -webkit-fill-available;*/
+    /*overflow: hidden;*/
+}
+.text{
+    padding: 20 30px ;
+    background: rgba(251, 249, 255, 0.20);
+    position: relative;
+    bottom: 145px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.title_text{
+    width: 320px;
+}
+.title{
+    font-size: 24px;
+    font-family: 'NutinoSans';
+    font-weight: bold;
+
+    white-space: nowrap; /* Запрещает перенос текста на новую строку */
+    overflow: hidden; /* Скрывает переполнение контента */
+    text-overflow: ellipsis; /* Добавляет многоточие в конце обрезанного текста */
+    max-width: 320px; /* Устанавливает максимальную ширину контейнера для текста */
+}
+
+.avtor{
+    font-size: 14px;
+    font-family: 'NutinoSans', sans-serif;
+}
+.flex{
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+.description{
+    display: none;
+}
+
+.money{
+    height: 50px;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(251, 249, 255, 0.5);
+    border-radius: 4px;
+}
+.money_title{
+    font-family: 'NutinoSans';
+    font-weight: bold;
+    font-size: 20px;
 }
