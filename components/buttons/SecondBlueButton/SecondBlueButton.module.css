@@ -1,5 +1,7 @@
 .button{
     background-color: var(--blueColor);
+    font-family: 'Open Sans', sans-serif;
+
     color: #FBF9FF;
     border-radius: 30px;
     height: fit-content;

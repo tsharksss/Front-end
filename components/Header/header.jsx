@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react';
 import styles from './header.module.css';
 
@@ -6,7 +8,12 @@ import Image from "next/image";
 import BlueButton from "../buttons/BlueButton/BlueButton";
 import TransprentWhiteButton from "../buttons/TransprentWhiteButton/TransprentWhiteButton";
 
+import Link from "next/link";
+
 function Header(props) {
+
+
+
     return (
         <div className={styles.header}>
             <div className={styles.main_header}>
@@ -14,8 +21,12 @@ function Header(props) {
                     <Image src={logo_dark} alt={'img'} height={100} />
                 </div>
                 <div className={styles.header_info}>
-                    <TransprentWhiteButton text={'Регистрация'}/>
-                    <BlueButton text={'Войти'}/>
+                    <Link href={'/auth/registartion'}>
+                        <TransprentWhiteButton text={'Регистрация'}  />
+                    </Link>
+                    <Link href={'/auth'}>
+                        <BlueButton text={'Войти'}/>
+                    </Link>
                 </div>
             </div>
 

@@ -1,15 +1,13 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 
-import BlueButton from '../../components/buttons/BlueButton/BlueButton'
-import TransprentWhiteButton from '../../components/buttons/TransprentWhiteButton/TransprentWhiteButton'
-import SecondBlueButton from '../../components/buttons/SecondBlueButton/SecondBlueButton'
-
 import YourTalantMoney from '../../components/YourTalantMoney/YourTalantMoney'
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
 import HowItWork from "../../components/HowItWork/HowItWork";
 import PopularPosts from "../../components/PopularPosts/PopularPosts";
+import WorkWithUs from "../../components/WorkWithUs/WorkWithUs";
+import YourWelcome from "../../components/YourWelcome/YourWelcome";
 
 export default function Home() {
   return (
@@ -21,6 +19,8 @@ export default function Home() {
             <YourTalantMoney/>
             <HowItWork/>
             <PopularPosts/>
+            <WorkWithUs/>
+            <YourWelcome/>
         <Footer/>
     </>
   );

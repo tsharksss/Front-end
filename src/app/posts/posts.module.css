@@ -1,0 +1,16 @@
+.main{
+    padding: 85px 130px;
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
+.another_flex{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+    justify-items: center;
+}

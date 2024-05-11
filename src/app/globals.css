@@ -16,6 +16,7 @@ body{
   --WhiteColor: #FBF9FF;
 
   /*background-color: black ;*/
+  overflow-x: hidden;
 }
 
 
@@ -244,6 +245,12 @@ legend {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Open-Sans Light';
+  src:  url('../../fonts/OpenSans-Light.ttf') format('truetype');
+}
+
+
 
 @font-face {
   font-family: 'NutinoSans-Bold';

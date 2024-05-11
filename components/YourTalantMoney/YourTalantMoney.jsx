@@ -10,6 +10,7 @@ import video from '../../public/yourTalantImage/video.png'
 import vote from '../../public/yourTalantImage/vote.png'
 import stat from '../../public/yourTalantImage/stat.png'
 import yourTalant from '../../public/yourTalantImage/yourTalant.png'
+import Link from "next/link";
 
 
 
@@ -60,7 +61,10 @@ function YourTalantMoney (props) {
             </div>
 
           </div>
+          <Link href={'/auth/registartion'}>
+
           <SecondBlueButton text={'Стать Автором'} style={{width: 640, fontSize: 32, height: 65, textAlign: 'center', marginTop: 100}} />
+          </Link>
         </div>
         <div className={styles.second_column}>
           <Image src={yourTalant} alt={"image"} width={960} />
