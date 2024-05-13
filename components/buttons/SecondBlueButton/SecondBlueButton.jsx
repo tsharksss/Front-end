@@ -1,12 +1,12 @@
 import React from 'react'
 
 import styles from './SecondBlueButton.module.css'
-function SecondBlueButton ({text, style}) {
+function SecondBlueButton ({text, styleee}) {
 
 
   return (
     <div>
-      <button className={styles.button} style={style}>{text ? text : ''}</button>
+      <button className={styles.button} style={styleee}>{text ? text : ''}</button>
     </div>
   )
 }

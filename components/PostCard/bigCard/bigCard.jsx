@@ -4,7 +4,7 @@ import Image from "next/image";
 import photo from "../../../public/temp.jpg";
 import temp from "../../../public/temp3.jpg";
 
-function BigCard({title, description, image}) {
+function BigCard({title, description, image, post = false}) {
 
 
     return (
@@ -13,6 +13,7 @@ function BigCard({title, description, image}) {
                 <div className={styles.image} style={{background: `url(${temp})`}}>
                     <Image src={temp} alt={'img'}/>
                 </div>
+                {post === false ?
                 <div className={styles.text}>
                     <div className={styles.flex}>
                         <div className={styles.title_text}>
@@ -25,7 +26,7 @@ function BigCard({title, description, image}) {
                         </div>
                     </div>
                     <p className={styles.description}>{description} Some text for uuuu</p>
-                </div>
+                </div> : null}
             </div>
         </div>
     );

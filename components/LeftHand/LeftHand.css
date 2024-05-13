@@ -3,6 +3,7 @@
 /*}*/
 
 .main{
+    position: sticky;
     padding: 24px 30px;
     width: 320px;
     height: 620px;
@@ -11,15 +12,33 @@
     border-radius: 40px;
     display: flex;
     flex-direction: column;
+    /*gap: 20px*/
+}
+.gap20{
+    gap: 20px;
+}
+.gap40{
+    gap: 40px;
+}
+.align_center{
     align-items: center;
-    gap: 20px
 }
 
 
-.Trand{
+.big_title{
     font-family: 'Open-Sans-Bold', sans-serif;
     font-weight: bold;
     font-size: 20px;
+}
+.title{
+    font-family: 'Open-Sans-Bold', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+.value{
+    font-family: 'Open-Sans', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
 }
 
 .filter{

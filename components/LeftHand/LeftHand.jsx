@@ -8,8 +8,10 @@ import arrow_icon from '../../public/icons/arrow_down.svg';
 import Image from "next/image";
 import MadiumCard from "../user_profile/mediumCard/madiumCard";
 import LittleCard from "../user_profile/littleCard/littleCard";
+import BlueButton from "../buttons/BlueButton/BlueButton";
+import SecondBlueButton from "../buttons/SecondBlueButton/SecondBlueButton";
 
-function LeftHand(props) {
+function LeftHand({posts_page = false, post_page = false , avtor_page = false, history_page = false,  }) {
 
     const choiceRef = useRef(null)
     const [status, setStatusActive] = useState(false);
@@ -24,8 +26,10 @@ function LeftHand(props) {
 
 
     return (
+        <div >
+        {posts_page === true ?
 
-        <div className='main'>
+            <div className='main align_center gap20' >
 
             <div className="filter">
                 <div className="ads_filter_select" ref={choiceRef}>
@@ -130,15 +134,37 @@ function LeftHand(props) {
                 </div>
             </div>
 
-            {/*<div className="tarand_style">*/}
-
-            {/*</div>*/}
-            <div className="Trand" >
+            <div className="big_title" >
                 <h1>В тренде</h1>
             </div>
             <LittleCard/>
             <LittleCard/>
             <LittleCard/>
+            </div>
+
+        : post_page === true ?
+                <div className='main gap40'>
+                    <SecondBlueButton text={'Назад'} styleee={{width: "100%", textAlign: 'center'}}/>
+                    <div className="title">
+                        <h1>Дата публикации</h1>
+                    </div>
+                    <div className="value">
+                        <h1>01/213/12</h1>
+                    </div>
+                    <div className="title">
+                        <h1>Оценить</h1>
+                    </div>
+                    <div className="value">
+                        {/*toDo: добавить кнопку лайк */}
+                        <h1>Нравитсься</h1>
+                    </div>
+                    <div className="title">
+                        <h1>Автор</h1>
+                    </div>
+                    <LittleCard/>
+                    <button className="Sub">Подписаться</button>
+                </div>
+                : null}
         </div>
 
     );

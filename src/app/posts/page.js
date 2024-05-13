@@ -11,10 +11,10 @@ import CardMininum from "../../../components/PostCard/CardMinimum/CardMininum";
 function PostsPage(props) {
     return (
         <div className={styles.page}>
-            <Header/>
+            {/*<Header/>*/}
                 <div className={styles.main}>
                     <div className={styles.flex}>
-                        <LeftHand/>
+                        <LeftHand posts_page={true}/>
                         <div>
                             <BigCard/>
                             <div className={styles.another_flex}>
@@ -32,7 +32,7 @@ function PostsPage(props) {
 
                     </div>
                 </div>
-            <Footer/>
+            {/*<Footer/>*/}
         </div>
     );
 }
