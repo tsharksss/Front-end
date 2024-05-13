@@ -10,6 +10,7 @@ function Page(props) {
         <div className={styles.main}>
             <div className={styles.flex}>
                 <LeftHand post_page={true}/>
+
                 <div>
                     <BigCard post={true}/>
                     <div className={styles.content}>
