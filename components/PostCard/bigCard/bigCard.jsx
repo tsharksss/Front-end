@@ -2,7 +2,7 @@ import React from 'react';
 import styles from "./bigCard.module.css";
 import Image from "next/image";
 import photo from "../../../public/temp.jpg";
-import temp from "../../../public/temp3.jpg";
+import temp from "../../../public/temp2.jpg";
 
 function BigCard({title, description, image, post = false}) {
 
@@ -10,7 +10,7 @@ function BigCard({title, description, image, post = false}) {
     return (
         <div>
             <div className={styles.main}>
-                <div className={styles.image} style={{background: `url(${temp})`}}>
+                <div className={styles.image} >
                     <Image src={temp} alt={'img'}/>
                 </div>
                 {post === false ?
@@ -28,6 +28,21 @@ function BigCard({title, description, image, post = false}) {
                     <p className={styles.description}>{description} Some text for uuuu</p>
                 </div> : null}
             </div>
+           {!post ?  <div className={styles.check_point}>
+                                    <div className={styles.f}>
+                                    <h3>Просмотров</h3>
+                                    <p>1 000 000</p>
+                                    </div >
+                                    <div className={styles.f}>
+                                    <h3>Оценок</h3>
+                                    <p>30 000</p>
+                                    </div >
+                                    <div className={styles.f}>
+                                    <h3>Дата публикации</h3>
+                                    <p>01.20.2004</p>
+                                    </div >
+                                   
+            </div> : null}
         </div>
     );
 }

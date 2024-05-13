@@ -15,13 +15,11 @@ export default function Home() {
       {/*<BlueButton/>*/}
       {/*<TransprentWhiteButton/>*/}
       {/*<SecondBlueButton/>*/}
-        <Header/>
             <YourTalantMoney/>
             <HowItWork/>
             <PopularPosts/>
             <WorkWithUs/>
             <YourWelcome/>
-        <Footer/>
     </>
   );
 }

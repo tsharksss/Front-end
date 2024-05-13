@@ -6,31 +6,54 @@
     overflow: hidden;
     cursor: pointer;
 
+    margin: 3vh 0;
+
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
 }
 
-.image{
+.image img{
     /*position: relative;*/
     /*z-index: -1;*/
     /*height: -webkit-fill-available;*/
     /*overflow: hidden;*/
 
-    object-fit: cover; /* Do not scale the image */
-    /*object-position: center; !* Center the image within the element *!*/
+    object-fit: fill; /* Do not scale the image */
+    object-position: center; /*  !* Center the image within the element *! */
     /*width: 1200px;*/
-    /*height: 500px;*/
+    height: 500px;
     overflow: hidden;
 
 }
+
+.check_point{
+    display: flex;
+    justify-content: space-between;
+}
+
+.check_point h3{
+    font-family: 'Open-Sans-Bold', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 2vh;
+}
+.check_point p{
+    font-family: 'Open-Sans', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+}
+.f{
+    display: flex;
+    align-items: center;
+}
+
 .text{
-
     color: white;
-
     padding: 10px 30px ;
     background: rgba(251, 249, 255, 0.20);
+    
     position: relative;
-    top: -280px;
+    bottom: 100px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
 

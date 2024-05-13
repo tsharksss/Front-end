@@ -3,6 +3,7 @@ import React from 'react';
 import styles from './WorkWithUs.module.css';
 import UserCard from '../user_profile/mediumCard/madiumCard';
 import SecondBlueButton from "../buttons/SecondBlueButton/SecondBlueButton";
+import Link from 'next/link';
 
 
 
@@ -40,9 +41,12 @@ function WorkWithUs(props) {
                     <UserCard/>
                 </div>
             </div>
+            <Link href={'./auth/registartion'}>
+
             <div className={styles.button}>
                 <SecondBlueButton text={'Смотреть ещё...'}/>
             </div>
+            </Link>
         </div>
     );
 }

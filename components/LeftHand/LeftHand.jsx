@@ -26,7 +26,8 @@ function LeftHand({posts_page = false, post_page = false , avtor_page = false, h
 
 
     return (
-        <div >
+        // <div >
+        <>
         {posts_page === true ?
 
             <div className='main align_center gap20' >
@@ -164,9 +165,26 @@ function LeftHand({posts_page = false, post_page = false , avtor_page = false, h
                     <LittleCard/>
                     <button className="Sub">Подписаться</button>
                 </div>
+                : avtor_page === true ? 
+                <div className='main gap40'>
+                    <SecondBlueButton text={'Назад'} styleee={{width: "100%", textAlign: 'center'}}/>
+                    <div className="title">
+                        <h1>Автор</h1>
+                    </div>
+                    <LittleCard/>
+                    <div className="title">
+                        <h1>Оплата</h1>
+                    </div>
+                    <div className="money">
+                        <h1>280</h1> <p>рублей в месяц</p> 
+                        <h1 style={{marginTop: "2vh"}}>3000</h1> <p>рублей в год</p>
+                    </div>
+                    
+                    <button className="Sub">Подписаться</button>
+                </div>
                 : null}
-        </div>
-
+        
+        </>
     );
 }
 

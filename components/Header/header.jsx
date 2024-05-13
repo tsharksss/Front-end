@@ -17,9 +17,12 @@ function Header(props) {
     return (
         <div className={styles.header}>
             <div className={styles.main_header}>
+                <Link href={"/"}>
+
                 <div className={styles.heser_logo}>
                     <Image src={logo_dark} alt={'img'} height={100} />
                 </div>
+                </Link>
                 <div className={styles.header_info}>
                     <Link href={'/auth/registartion'}>
                         <TransprentWhiteButton text={'Регистрация'}  />

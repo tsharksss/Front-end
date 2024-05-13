@@ -3,6 +3,7 @@ import React from 'react'
 import styles from './PopularPosts.module.css'
 import CardMedium from '../PostCard/CardMedium/CardMedium'
 import TransprentWhiteButton from '../buttons/TransprentWhiteButton/TransprentWhiteButton'
+import Link from 'next/link'
 
 
 function PopularPosts (props) {
@@ -18,7 +19,9 @@ function PopularPosts (props) {
             </div>
           </div>
           <div className={styles.flex}>
+          <Link href={'./auth/registartion'}>
           <TransprentWhiteButton text={'Показать еще...'}/>
+          </Link>
           </div>
         </div>
       </div>
