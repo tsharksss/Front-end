@@ -1,6 +1,7 @@
 .button{
     background-color: var(--blueColor);
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'NutinoSans-Bold', sans-serif;
+    font-weight: bold;
 
     color: #FBF9FF;
     border-radius: 30px;

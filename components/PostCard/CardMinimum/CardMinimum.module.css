@@ -43,9 +43,11 @@
 
 .title{
     height: 64px;
-    font-family: 'Nunito Sans';
+    font-family: 'NunitoSans-Bold', sans-serif;
+    font-weight: bold;
+
     font-style: normal;
-    font-weight: 700;
+    /* font-weight: 700; */
     font-size: 24px;
     line-height: 32px;
     /* or 133% */
@@ -58,7 +60,8 @@
 }
 .description{
     height: 80px;
-    font-family: 'Nunito Sans';
+    font-family: 'NutinoSans', sans-serif;
+    
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -88,7 +91,8 @@
 
 .date{
     /* 01/04/2023 */
-    font-family: 'Nunito Sans ExtraBold';
+    font-family: 'NunitoSans-Bold', sans-serif;
+    font-weight: bold;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -102,7 +106,9 @@
 
 }
 .money{
-    font-family: 'Nunito Sans ExtraBold';
+    font-family: 'NunitoSans-Bold', sans-serif;
+    font-weight: bold;
+
     font-style: normal;
     font-weight: 700;
     font-size: 14px;

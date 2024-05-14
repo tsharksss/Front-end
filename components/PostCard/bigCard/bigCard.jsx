@@ -3,8 +3,9 @@ import styles from "./bigCard.module.css";
 import Image from "next/image";
 import photo from "../../../public/temp.jpg";
 import temp from "../../../public/temp2.jpg";
+import LittleCard from '../../user_profile/littleCard/littleCard';
 
-function BigCard({title, description, image, post = false}) {
+function BigCard({title, description, image, post = false, avtor = false}) {
 
 
     return (
@@ -29,6 +30,21 @@ function BigCard({title, description, image, post = false}) {
                 </div> : null}
             </div>
            {!post ?  <div className={styles.check_point}>
+                                    {avtor ?
+                                    <>
+                                    <LittleCard/> 
+                                    <div className={styles.f}>
+                                    <h3>Просмотров</h3>
+                                    <p>1 000 000</p>
+                                    </div >
+                                    <div className={styles.f}>
+                                    <h3>Дата публикации</h3>
+                                    <p>01.20.2004</p>
+                                    </div >
+                                    </> 
+                                    
+                                    : 
+                                    <>
                                     <div className={styles.f}>
                                     <h3>Просмотров</h3>
                                     <p>1 000 000</p>
@@ -40,7 +56,9 @@ function BigCard({title, description, image, post = false}) {
                                     <div className={styles.f}>
                                     <h3>Дата публикации</h3>
                                     <p>01.20.2004</p>
-                                    </div >
+                                    </div > 
+                                    </>
+                                    }
                                    
             </div> : null}
         </div>

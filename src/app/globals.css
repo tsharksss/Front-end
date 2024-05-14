@@ -15,6 +15,9 @@ body{
   --greenColor: #32A095;
   --WhiteColor: #FBF9FF;
 
+  --grayColor: #8E8E8E;
+  --redColor: #A03232;
+
   /*background-color: black ;*/
   overflow-x: hidden;
 }
@@ -253,7 +256,7 @@ legend {
 
 
 @font-face {
-  font-family: 'NutinoSans-Bold';
+  font-family: 'Open-Sans-Bold';
   src:  url('../../fonts/OpenSans-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;

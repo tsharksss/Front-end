@@ -12,9 +12,6 @@ import YourWelcome from "../../components/YourWelcome/YourWelcome";
 export default function Home() {
   return (
     <>
-      {/*<BlueButton/>*/}
-      {/*<TransprentWhiteButton/>*/}
-      {/*<SecondBlueButton/>*/}
             <YourTalantMoney/>
             <HowItWork/>
             <PopularPosts/>

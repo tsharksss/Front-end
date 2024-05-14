@@ -1,0 +1,38 @@
+.main{
+    padding: 85px 130px;
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
+
+.title{
+    font-family: 'Open-Sans-Bold', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.about{
+    font-family: 'Open-Sans', sans-serif;
+    font-size: 20px;
+    line-height: 2rem;
+
+    text-align: justify;    /* Выравнивание по ширине для книжного вида */
+    text-indent: 2em;       /* Отступ в начале абзаца, как в книгах */
+    max-width: 60em;        /*  Ограничение ширины текста для удобного чтения */
+    margin: 3vh auto;
+
+    /* margin-bottom: 3vh; */
+
+}
+
+
+.another_flex{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+    justify-items: center;
+}

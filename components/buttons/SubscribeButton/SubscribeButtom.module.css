@@ -1,0 +1,30 @@
+.button{
+    background-color: var(--redColor);
+    font-family: 'NutinoSans-Bold', sans-serif;
+    font-weight: bold;
+    text-align: center;
+
+    color: #FBF9FF;
+    border-radius: 30px;
+    height: fit-content;
+    width: fit-content;
+    padding: 5px 40px;
+    font-size: 20px;
+    /*box-shadow: 1px 1px 1px 1px #000807;*/
+}
+
+.button{
+    background-color: var(--grayColor);
+    font-family: 'NutinoSans-Bold', sans-serif;
+    font-weight: bold;
+    text-align: center;
+
+
+    color: #FBF9FF;
+    border-radius: 30px;
+    height: fit-content;
+    width: fit-content;
+    padding: 5px 40px;
+    font-size: 20px;
+    /*box-shadow: 1px 1px 1px 1px #000807;*/
+}

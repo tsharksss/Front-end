@@ -10,6 +10,7 @@ import MadiumCard from "../user_profile/mediumCard/madiumCard";
 import LittleCard from "../user_profile/littleCard/littleCard";
 import BlueButton from "../buttons/BlueButton/BlueButton";
 import SecondBlueButton from "../buttons/SecondBlueButton/SecondBlueButton";
+import SubscribeButtom from '../buttons/SubscribeButton/SubscribeButtom';
 
 function LeftHand({posts_page = false, post_page = false , avtor_page = false, history_page = false,  }) {
 
@@ -28,7 +29,7 @@ function LeftHand({posts_page = false, post_page = false , avtor_page = false, h
     return (
         // <div >
         <>
-        {posts_page === true ?
+        {posts_page ?
 
             <div className='main align_center gap20' >
 
@@ -143,7 +144,7 @@ function LeftHand({posts_page = false, post_page = false , avtor_page = false, h
             <LittleCard/>
             </div>
 
-        : post_page === true ?
+        : post_page ?
                 <div className='main gap40'>
                     <SecondBlueButton text={'Назад'} styleee={{width: "100%", textAlign: 'center'}}/>
                     <div className="title">
@@ -163,10 +164,10 @@ function LeftHand({posts_page = false, post_page = false , avtor_page = false, h
                         <h1>Автор</h1>
                     </div>
                     <LittleCard/>
-                    <button className="Sub">Подписаться</button>
+                    <SubscribeButtom text={'Подписаться'} styleee={{width: "100%"}}/>
                 </div>
-                : avtor_page === true ? 
-                <div className='main gap40'>
+                : avtor_page ? 
+                <div className='main gap20'>
                     <SecondBlueButton text={'Назад'} styleee={{width: "100%", textAlign: 'center'}}/>
                     <div className="title">
                         <h1>Автор</h1>
@@ -180,8 +181,26 @@ function LeftHand({posts_page = false, post_page = false , avtor_page = false, h
                         <h1 style={{marginTop: "2vh"}}>3000</h1> <p>рублей в год</p>
                     </div>
                     
-                    <button className="Sub">Подписаться</button>
+                    <SubscribeButtom text={'Подписаться'} styleee={{width: "100%"}}/>
                 </div>
+
+                : history_page ?  
+
+                <div className='main gap20'>
+                <SecondBlueButton text={'Назад'} styleee={{width: "100%", textAlign: 'center'}}/>
+                <div className="big_title">
+                    <h1>Мой профиль</h1>
+                </div>
+                <LittleCard/>
+                <div className="big_title">
+                    <h1>Подписки</h1>
+                </div>
+                <LittleCard/>
+                <LittleCard/>
+                <LittleCard/>
+                <BlueButton text={'Смотреть ещё..'} styleee={{width: "100%", textAlign: 'center'}}/>
+                </div>
+                
                 : null}
         
         </>
